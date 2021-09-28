@@ -376,6 +376,7 @@ nav.navbar.bootsnav .navbar-toggle i {
 
 .single-about-add-info {
     margin: 35px 0;
+    width: max-content;
 }
 
 .single-about-add-info h3 {
@@ -391,8 +392,11 @@ nav.navbar.bootsnav .navbar-toggle i {
     margin-top: 3px;
 }
 
-
-/*.single-about-txt*/
+.single-about-txt .row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 /*.single-about-img */
@@ -437,27 +441,24 @@ nav.navbar.bootsnav .navbar-toggle i {
 }
 
 .about-list-icon ul li a {
-    padding-right: 22px;
+    padding-top: 10px;
     cursor: pointer;
     color: #000;
 }
 
 .about-list-icon ul li a {
     cursor: pointer;
-    color: #222;
+    color: #ccc;
     display: inline-block;
     border: 2px solid;
     margin-left: 20px;
     border-radius: 8px;
-    width: 30px;
-    height: 30px;
-    line-height: 28px;
+    width: 45px;
+    height: 45px;
     text-align: center;
 }
 
-.about-list-icon ul li a i {
-    margin-left: 6px;
-}
+.about-list-icon ul li a i {}
 
 
 /*.ab-list-icon */
@@ -527,6 +528,10 @@ span.single-timeline-horizontal {
     background: #b2c1ce;
     height: 1px;
     width: 40vh;
+}
+
+.single-horizontal-timeline div.timeline-horizontal-border span {
+    width: 100%;
 }
 
 span.single-timeline-horizontal.spacial-horizontal-line {
@@ -692,7 +697,7 @@ h4.title {
     background: #b2c1ce;
     position: absolute;
     top: 1.5%;
-    left: 50%;
+    left: 50.95%;
     z-index: -1;
 }
 
