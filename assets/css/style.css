@@ -526,7 +526,7 @@ span.single-timeline-horizontal {
     display: inline-block;
     background: #b2c1ce;
     height: 1px;
-    width: 600px;
+    width: 40vh;
 }
 
 span.single-timeline-horizontal.spacial-horizontal-line {

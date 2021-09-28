@@ -227,8 +227,8 @@ th {
 
 @media print {
     *,
-    :after,
-    :before {
+     :after,
+     :before {
         color: #000!important;
         text-shadow: none!important;
         background: 0 0!important;
@@ -1370,8 +1370,8 @@ th {
     box-sizing: border-box
 }
 
-:after,
-:before {
+ :after,
+ :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
@@ -1979,6 +1979,15 @@ pre code {
     margin-left: auto
 }
 
+@media (max-width: 575.98px) {
+    .education-horizontal-timeline .col-sm-4 {
+        min-width: -webkit-fill-available;
+    }
+    .row {
+        display: block !important;
+    }
+}
+
 @media (min-width:768px) {
     .container {
         width: 750px
@@ -2009,6 +2018,7 @@ pre code {
     margin-left: -15px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .col-lg-1,
