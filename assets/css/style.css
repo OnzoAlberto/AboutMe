@@ -1,27 +1,7 @@
 /*==================================
-* Author        : "ThemeSine"
-* Template Name :  Browny  HTML Template
-* Version       : 1.0
-==================================== */
-
-
-/*==================================
 font-family: 'Poppins', sans-serif;
 ==================================== */
 
-
-/*=========== TABLE OF CONTENTS ===========
-1.  General css (Reset code)
-2.  Header
-3.  Welcome-hero
-4.  About me 
-5.  Education
-6.  Skill
-7.  Experience
-8.  Profiles
-9.  Portfolio
-10. Clients
-11. Contact
 
 /*-------------------------------------
 		1.General css (Reset code)
@@ -333,6 +313,7 @@ nav.navbar.bootsnav .navbar-toggle i {
     -ms-transition: 0.3s linear;
     -o-transition: 0.3s linear;
     transition: 0.3s linear;
+    margin-top: 10px;
 }
 
 .header-text a:hover {
