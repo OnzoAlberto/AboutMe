@@ -24,7 +24,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: #676a81;
-    background: #222;
+    /* background: #222;*/
     max-width: 1920px;
     margin: 0 auto;
     overflow-x: hidden;
@@ -453,7 +453,6 @@ nav.navbar.bootsnav .navbar-toggle i {
 --------------------------------------*/
 
 .education {
-    background: #222;
     padding-top: 50px;
 }
 
