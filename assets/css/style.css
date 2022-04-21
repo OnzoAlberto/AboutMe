@@ -574,6 +574,37 @@ span.single-timeline-horizontal.spacial-horizontal-line {
     text-transform: uppercase;
 }
 
+#instagram,
+#linkedn,
+#facebook {
+    font-size: 2em;
+    color: #fff;
+    margin-top: -0.5rem;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+}
+
+#instagram {
+    animation-delay: 0.7s;
+}
+
+#linkedn {
+    animation-delay: 0.3s;
+}
+
+#facebook {
+    animation-delay: 0.1s;
+}
+
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
 .progress {
     border-radius: 3px;
     overflow: visible;
