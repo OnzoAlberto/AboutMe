@@ -123,6 +123,13 @@ nav.navbar.bootsnav .container {
     padding-right: 40px;
 }
 
+.sticky-wrapper,
+.sticky-wrapper .container,
+.sticky-wrapper nav.navbar.bootsnav .container {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
 .navbar-header {
     float: left !important;
 }
