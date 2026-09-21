@@ -1,15 +1,6 @@
 $(document).ready(function() {
     "use strict";
 
-    /*=========== TABLE OF CONTENTS ===========
-    1. Scroll To Top 
-    2. Smooth Scroll spy
-    3. Progress-bar
-    4. owl carousel
-    5. welcome animation support
-    ======================================*/
-
-    // 1. Scroll To Top
     $(window).on('scroll', function() {
         if ($(this).scrollTop() > 600) {
             $('.return-to-top').fadeIn();
@@ -24,8 +15,6 @@ $(document).ready(function() {
         return false;
     });
 
-
-    // 2. Smooth Scroll spy
 
     $('.header-area').sticky({
         topSpacing: 0
@@ -44,9 +33,6 @@ $(document).ready(function() {
         offset: 0
     });
 
-
-    // 3. Progress-bar
-
     var dataToggleTooTip = $('[data-toggle="tooltip"]');
     var progressBar = $(".progress-bar");
     if (progressBar.length) {
@@ -60,17 +46,13 @@ $(document).ready(function() {
             });
         });
 
-        // Fix: jquery.appear.js checks visibility only on scroll/resize events,
-        // so bars stay empty on first load until the user interacts.
-        // Force an initial check right after binding.
-        setTimeout(function() {
-            $(window).trigger('scroll');
-            $(window).trigger('resize');
-        }, 200);
+        if ($.fn.appear && $.fn.appear.checkAll) {
+            $.fn.appear.checkAll();
+            $(window).on('load', function() {
+                $.fn.appear.checkAll();
+            });
+        }
     }
-
-
-    // 4. owl carousel
 
     $('#client').owlCarousel({
         items: 7,
@@ -105,8 +87,6 @@ $(document).ready(function() {
         owl.trigger('stop.owl.autoplay')
     });
 
-
-    // 5. welcome animation support
 
     $(window).on('load', function() {
         $(".header-text h2,.header-text p").removeClass("animated fadeInUp").css({ 'opacity': '0' });
